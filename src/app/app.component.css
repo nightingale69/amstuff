@@ -1,21 +1,150 @@
-.vertical-menu {
-    width: 200px;
-    height: 100%; /* Set a width if you like */
+@keyframes eyes {
+    0% {
+        background-color: white;
+        box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+    }
+    30% {
+        background-color: rgb(255, 127, 127);
+        box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+    }
+    50% {
+        background-color: rgb(255, 0, 0);
+        box-shadow: 0px 0px 0px 0px rgb(255, 4, 4);
+    }
+    75% {
+        box-shadow: 0px 0px 5px 2px rgb(255, 4, 4);
+    }
+    100% {
+        box-shadow: 0px 0px 10px 5px rgb(255, 4, 4);
+    }
 }
 
-.vertical-menu a {
-    background-color: #eee; /* Grey background color */
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
+.navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    color: #fff;
+    position: fixed;
+    background-color: black
 }
 
-.vertical-menu a:hover {
-    background-color: #ccc; /* Dark grey background on mouse-over */
+.logo {
+    padding-right: 242px;
+    padding-left: 7px;
+    border: 2px solid white;
+    border-radius: 10px
 }
 
-.vertical-menu a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
-    color: white;
+.navbar li { 
+    display: inline-block;
+    vertical-align: middle; 
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar a {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 80px;
+}
+.navbar a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.eyes {
+    position: absolute;
+    top: 43px;
+}
+.left_eye {
+    width: 8px;
+    height: 4px;
+    margin-left: 21px;
+    transform: rotate(25deg);
+    border-radius: 50%;
+    animation-name: eyes;
+    animation-duration: 4s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgb(255, 4, 4);
+    float: left;
+}
+.right_eye {
+    width: 7px;
+    height: 4px;
+    margin-left: 18px;
+    transform: rotate(-25deg);
+    border-radius: 50%;
+    animation-name: eyes;
+    animation-duration: 4s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgb(255, 4, 4);
+    float: left;
+}
+.logo_title {
+    font-family: 'LeArchitect', 'arial', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-top: -15px;
+    margin-left: 80px;
+    text-decoration: underline;
+    animation-name: title;
+    animation-duration: 4s;
+}
+
+.main {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.content__description {
+    width: 100%;
+    background-image: url("/assets/images/description1.jpg");
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+}
+
+.content__products {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 5% 15px 5%;
+}
+
+.product_block {
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.image img {
+    width: 400px;
+}
+
+.description {
+    padding-left: 10px;
+}
+
+.content__news {
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+}
+
+.content__about {
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.footer {
+    height: 50vh;
+    margin-top: -50vh;
 }

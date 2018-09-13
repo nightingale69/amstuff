@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Exo2-Regular', 'arial', sans-serif;
+    background-color: black;
+}
+
+@font-face {
+    font-family: Exo2-Regular; /* Имя шрифта */
+    src: url(assets/fonts/Exo2-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: LeArchitect; /* Имя шрифта */
+    src: url(assets/fonts/LeArchitect.ttf); /* Путь к файлу со шрифтом */
+}

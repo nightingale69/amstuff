@@ -1,12 +1,56 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
-  <div class="vertical-menu">
-    <a href="#" class="active">Главная</a>
-    <a href="#">Новости</a>
-    <a href="#">О нас</a>
-  </div>
-</div>
+<header class="header">
+  	<ul class="navbar">
+		<li><a href="#products">ИЗДЕЛИЯ</a></li>
+		<li><a href="#footer">СВЯЗЬ</a></li>
+		<li>
+			<div class="logo">
+				<img src="assets/images/logo.jpg" width="75" height="80" alt="logo">
+				<div class="eyes">
+					<div class="left_eye"></div>
+					<div class="right_eye"></div>
+					<h2 class="logo_title">
+						<p>
+							a.m.stuff
+						</p>
+					</h2>
+				</div>
+			</div>
+		</li>
+		<li><a href="#news">НОВОСТИ</a></li>
+		<li><a href="#about">О НАС</a></li>
+	</ul>  
+</header>
+<main class="main content">
+	<div class="content__description">
+	</div>
+
+	<div class="content__products products">
+		<p><a name="products"></a></p>
+		<div class="products__product" *ngFor="let item of data">
+			<div class="product_block image">
+				<img src="{{item.image}}" width="300" alt="product">
+			</div>
+			<div class="product_block description">
+				<p>
+					{{ item.description }}
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="content__news">
+		<p><a name="news"></a></p>
+	</div>
+
+	<div class="content__about">
+		<p><a name="about"></a></p>
+	</div>
+</main>
+
+<footer class="footer">
+	<p><a name="footer"></a></p>
+	<div class="footer_communications">
+		
+	</div>
+</footer>
 
