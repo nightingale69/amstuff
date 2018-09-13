@@ -9,6 +9,10 @@ body {
     background-color: black;
 }
 
+a {
+    color: #fff;
+}
+
 @font-face {
     font-family: Exo2-Regular; /* Имя шрифта */
     src: url(assets/fonts/Exo2-Regular.ttf); /* Путь к файлу со шрифтом */

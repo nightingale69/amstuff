@@ -1,7 +1,7 @@
 <header class="header">
   	<ul class="navbar">
 		<li><a href="#products">ИЗДЕЛИЯ</a></li>
-		<li><a href="#footer">СВЯЗЬ</a></li>
+		<li><a href="#communications">КОНТАКТЫ</a></li>
 		<li>
 			<div class="logo">
 				<img src="assets/images/logo.jpg" width="75" height="80" alt="logo">
@@ -16,12 +16,15 @@
 				</div>
 			</div>
 		</li>
-		<li><a href="#news">НОВОСТИ</a></li>
+		<li><a href="#pay">ОПЛАТА</a></li>
 		<li><a href="#about">О НАС</a></li>
 	</ul>  
 </header>
 <main class="main content">
 	<div class="content__description">
+		<p style="color: white"> 
+			Собственное производство, ручная работа. Кожаная скрутка для транспортировки и хранения поварских ножей. Все наши скрутки выполнены СТРОГО из НАТУРАЛЬНОЙ КОЖИ. Скрутка - это обязательный аксессуар для профессионального повара и для любителя.
+		</p>
 	</div>
 
 	<div class="content__products products">
@@ -34,23 +37,37 @@
 				<p>
 					{{ item.description }}
 				</p>
+				<p>
+					{{ item.price }}
+				</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="content__news">
-		<p><a name="news"></a></p>
+	<div class="content__pay">
+		<p><a name="pay"></a></p>
 	</div>
 
 	<div class="content__about">
 		<p><a name="about"></a></p>
 	</div>
+
+	<div class="content__communications">
+		<div class="communications__number">
+			<p><a name="communications"></a></p>
+			<p>
+				Телефон: +7 999 999 99 99
+			</p>
+			<p>
+				<a href="mailto:draghignazzo.sss@gmail.com" target="_blank">
+					E-mail : draghignazzo.sss@gmail.com
+				</a>
+			</p>
+		</div>
+	</div>
 </main>
 
 <footer class="footer">
-	<p><a name="footer"></a></p>
-	<div class="footer_communications">
-		
-	</div>
+	
 </footer>
 
