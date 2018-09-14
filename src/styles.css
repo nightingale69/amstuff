@@ -5,12 +5,17 @@
 
 body {
     margin: 0;
-    font-family: 'Exo2-Regular', 'arial', sans-serif;
+    font-family: 'Tsarevich', 'arial', sans-serif;
     background-color: black;
 }
 
 a {
     color: #fff;
+}
+
+@font-face {
+    font-family: Tsarevich; /* Имя шрифта */
+    src: url(assets/fonts/Haymaker.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {

@@ -1,7 +1,7 @@
 <header class="header">
   	<ul class="navbar">
 		<li><a href="#products">ИЗДЕЛИЯ</a></li>
-		<li><a href="#communications">КОНТАКТЫ</a></li>
+		<li><a href="#pay">ОПЛАТА</a></li>
 		<li>
 			<div class="logo">
 				<img src="assets/images/logo.jpg" width="75" height="80" alt="logo">
@@ -16,15 +16,21 @@
 				</div>
 			</div>
 		</li>
-		<li><a href="#pay">ОПЛАТА</a></li>
+		<li><a href="#communications">КОНТАКТЫ</a></li>
 		<li><a href="#about">О НАС</a></li>
 	</ul>  
 </header>
 <main class="main content">
 	<div class="content__description">
-		<p style="color: white"> 
+		<div class="image_description1">
+			<img src="assets/images/description1_1.jpg" alt="logo">
+		</div>
+		<div class="image_description2">
+			<img src="assets/images/description1_2.jpg" alt="logo">
+		</div>
+		<!--<p style="color: rgb(255, 255, 255)"> 
 			Собственное производство, ручная работа. Кожаная скрутка для транспортировки и хранения поварских ножей. Все наши скрутки выполнены СТРОГО из НАТУРАЛЬНОЙ КОЖИ. Скрутка - это обязательный аксессуар для профессионального повара и для любителя.
-		</p>
+		</p>-->
 	</div>
 
 	<div class="content__products products">
@@ -44,8 +50,36 @@
 		</div>
 	</div>
 
-	<div class="content__pay">
-		<p><a name="pay"></a></p>
+	<div class="content__delivery-payment delivery-payment">
+			<p class="anchor_delivery-payment"><a name="pay"></a></p>
+		<div class="delivery-payment--container">
+			<div class="delivery-payment-delivery">
+				<p class="title-delivery">
+					Доставка
+				</p>
+				<div class="select-delivery" *ngFor="let item of deliveries">
+					<p style="font-weight: bold">{{ item.place }}</p>
+					<p>{{ item.where1 }}</p>
+					<p>{{ item.price1 }}</p>
+					<p>{{ item.comment1 }}</p>
+					<p>{{ item.where2 }}</p>
+					<p>{{ item.price2 }}</p>
+					<p>{{ item.comment2 }}</p>
+					<p>{{ item.where3 }}</p>
+					<p>{{ item.price3 }}</p>
+					<p>{{ item.comment3 }}</p>
+				</div>
+			</div>
+			<div class="delivery-payment-payment">
+				<p class="title-payment">
+					Оплата
+				</p>
+				<div class="select-payment" *ngFor="let item of payment">
+					<p>{{ item.how }}</p>
+					<p>{{ item.comment }}</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="content__about">
