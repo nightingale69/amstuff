@@ -1,0 +1,81 @@
+.content__products {
+    position: relative;
+    background-color: #e2ddd5;
+    padding: 20px 0 0 0;
+    z-index: 100;
+}
+
+.products__title {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/*Скрутки*/
+.products__bag {
+    width: 400px;
+    display: inline-block;
+    margin: 0 5px 20px 5px;
+    border: 1px solid white;
+}
+
+.product_bag--block {
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image_bag img {
+    width: 400px;
+}
+
+.image_bag-mini {
+    display: inline-block;
+}
+
+.image_bag-mini img {
+    width: 196px;
+    padding: 0 2px 0 2px;
+}
+
+.description_bag {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+
+/*Соусы*/
+.products__souces {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.souces-logo {
+    padding-top: 20px;
+}
+
+.souces-description {
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+}
+
+.product_souce--block {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 10px 0 10px;
+    vertical-align: middle;
+}
+
+.image_souce img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.description_souce {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.description_souce-text {
+    height: 45px;
+}

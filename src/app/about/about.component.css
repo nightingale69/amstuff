@@ -1,0 +1,29 @@
+.content__about {
+    position: relative;
+    height: auto;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    z-index: 100;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /*background-color: #353535;
+    background-image: url("/assets/images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 35%;*/
+}
+
+.about-block {
+    display: inline-block;
+    width: 650px;
+    font-size: 30px;
+    vertical-align: middle;
+    text-align: left;
+    font-family: 'Caveat-Regular', 'arial', sans-serif;
+}
+
+.about_image img {
+    border: 1px solid gray; 
+}

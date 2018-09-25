@@ -28,6 +28,11 @@ a {
     src: url(assets/fonts/LeArchitect.ttf); /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+    font-family: Caveat-Regular; /* Имя шрифта */
+    src: url(assets/fonts/Caveat-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
 .app-root__load {
     position: absolute;
     margin: auto;

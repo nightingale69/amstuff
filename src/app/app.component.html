@@ -21,88 +21,11 @@
 	</ul>-->  
 </header>
 <main class="main content">
-	<div class="content__description description_site">
-		<div class="description_site__logo">
-				<div class="eyes">
-					<div class="left_eye"></div>
-					<div class="right_eye"></div>
-				</div>
-			<img src="assets/images/logo.png" width="400px" alt="logo">
-			<h2 class="logo_title">a.m.stuff</h2>
-		</div>
-		<p> 
-			Кожаные скрутки для транспортировки и хранения поварских ножей. 
-			Натуральная кожа, ручная работа.
-		</p>
-		<p class="to_products--arrow"><a href="#products">▼</a></p>
-	</div>
-
-	<div class="content__products products">
-		<p><a name="products"></a></p>
-		<div class="products__product" *ngFor="let item of data">
-			<div class="product_block image">
-				<img src="{{item.image}}" width="300" alt="product">
-			</div>
-			<div class="product_block description">
-				<p>
-					{{ item.description }}
-				</p>
-				<p>
-					{{ item.price }}
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="content__delivery-payment delivery-payment">
-			<p class="anchor_delivery-payment"><a name="pay"></a></p>
-		<div class="delivery-payment--container">
-			<div class="delivery-payment-delivery">
-				<p class="title-delivery">
-					Доставка
-				</p>
-				<div class="select-delivery" *ngFor="let item of deliveries">
-					<p style="font-weight: bold">{{ item.place }}</p>
-					<p>{{ item.where1 }}</p>
-					<p>{{ item.price1 }}</p>
-					<p>{{ item.comment1 }}</p>
-					<p>{{ item.where2 }}</p>
-					<p>{{ item.price2 }}</p>
-					<p>{{ item.comment2 }}</p>
-					<p>{{ item.where3 }}</p>
-					<p>{{ item.price3 }}</p>
-					<p>{{ item.comment3 }}</p>
-				</div>
-			</div>
-			<div class="delivery-payment-payment">
-				<p class="title-payment">
-					Оплата
-				</p>
-				<div class="select-payment" *ngFor="let item of payment">
-					<p>{{ item.how }}</p>
-					<p>{{ item.comment }}</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="content__about">
-		<p><a name="about"></a></p>
-	</div>
-
-	<div class="content__communications">
-		<div class="communications__number">
-			<p><a name="communications"></a></p>
-			<p>
-				Телефон: +7 999 999 99 99
-			</p>
-			<p>
-				<a href="mailto:draghignazzo.sss@gmail.com" target="_blank">
-					E-mail : draghignazzo.sss@gmail.com
-				</a>
-			</p>
-		</div>
-	</div>
+	<app-description></app-description>
+	<app-products></app-products>
+	<app-delivery></app-delivery>
+	<app-about></app-about>
+	<app-communications></app-communications>
 </main>
 
 <footer class="footer">

@@ -1,0 +1,32 @@
+<div class="content__delivery-payment delivery-payment">
+  	<p class="anchor_delivery-payment"><a name="pay"></a></p>
+	<div class="delivery-payment--container">
+	  	<div class="delivery-payment-delivery">
+	  	  	<p class="title-delivery" style="font-size: 30px">
+	  	  	  	Доставка
+	  	  	</p>
+	  	  	<div class="select-delivery" *ngFor="let item of deliveries">
+	  	  	  	<p style="font-weight: bold;">{{ item.place }}</p>
+	  	  	  	<p>{{ item.where1 }}</p>
+	  	  	  	<p>{{ item.price1 }}</p>
+	  	  	  	<p>{{ item.comment1 }}</p>
+	  	  	  	<p>{{ item.where2 }}</p>
+	  	  	  	<p>{{ item.price2 }}</p>
+	  	  	  	<p>{{ item.comment2 }}</p>
+	  	  	  	<p>{{ item.where3 }}</p>
+	  	  	  	<p>{{ item.price3 }}</p>
+	  	  	  	<p>{{ item.comment3 }}</p>
+	  	  	</div>
+	  	</div>
+	  	<div class="delivery-payment-payment">
+	  	  	<p class="title-payment" style="font-size: 30px">
+	  	  	  	Оплата
+	  	  	</p>
+	  	  	<div class="select-payment" *ngFor="let item of payment">
+	  	  	  	<p style="font-weight: bold">{{ item.how }}</p>
+	  	  	  	<p>{{ item.comment }}</p>
+	  	  	</div>
+		</div>
+		<img style="position:absolute; width:32%; top: 0; left: 68%" src="assets/images/delivery/background3.jpg" width="500px" alt="walden farms">  
+	</div>
+</div>

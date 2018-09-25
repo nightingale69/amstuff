@@ -1,0 +1,9 @@
+.content__communications {
+    position: relative;
+    height: auto;
+    height: 100vh;
+    text-align: center;
+    background-color: #191919e3;
+    font-size: 30px;
+    color: #fff;
+}

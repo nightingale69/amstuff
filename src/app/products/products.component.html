@@ -1,0 +1,49 @@
+<div class="content__products products">
+  	<p><a name="products"></a></p>
+  	<div class="products__title">
+  	  	<p>Наши скрутки</p>
+  	</div>
+  	<div class="products__bag" *ngFor="let bag of products_bags">
+  	  	<div class="product_bag--block bag-gallery">
+  	  	  	<div class="image_bag">
+  	  	  	  	<img src="{{bag.image1}}" alt="bag">
+  	  	  	</div>
+  	  	  	<div class="image_bag-mini">
+  	  	  	  	<img src="{{bag.image2}}" alt="bag mini">
+  	  	  	</div>
+  	  	  	<div class="image_bag-mini">
+  	  	  	  	<img src="{{bag.image3}}" alt="bag mini">
+  	  	  	</div>
+  	  	</div>
+  	  	<div class="product_bag--block description_bag">
+  	  	  	<p>
+  	  	  	  	{{ bag.description }}
+  	  	  	</p>
+  	  	  	<p>
+  	  	  	  	{{ bag.price }}
+  	  	  	</p>
+  	  	</div>
+  	</div>
+
+  	<div class="products__souces">
+  	  	<div class="souces-logo">
+  	  	    <img src="assets/images/souces/waldenfarms-logo.jpg" width="500px" alt="walden farms">
+  	  	    <p class="souces-description">
+  	  	      	С самого начала миссия Walden Farms как фермерского хозяйства заключалась в том, 
+  	  	      	чтобы развивать здоровую пищу, помочь людям контролировать свои калории, жиры, углеводы, глютен или сахар любого рода ... 
+  	  	      	не отказываясь от большинства вкусов!
+  	  	    </p>
+  	  	</div>
+  	  	<div *ngFor="let souce of products_souces" class="product_souce--block image_souce">
+  	  	  	<img src="{{souce.image}}" alt="souce">
+  	  	  	<div class="product_other--block description_souce">
+  	  	  	  	<p class="description_souce-text">
+  	  	  	  	  	{{ souce.description }}
+  	  	  	  	</p>
+  	  	  	  	<p>
+  	  	  	  	  	{{ souce.price }}
+  	  	  	  	</p>
+  	  	  	</div>
+  	  	</div>
+  	</div>
+</div>
