@@ -2,13 +2,14 @@
     position: relative;
     background-color: #e2ddd5;
     padding: 20px 0 0 0;
-    z-index: 100;
+    z-index: 10;
 }
 
-.products__title {
-    color: black;
+.anchor_products {
+    position: relative;
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    z-index: 2;
 }
 
 /*Скрутки*/
@@ -43,11 +44,12 @@
     margin-bottom: 30px;
 }
 
-
 /*Соусы*/
 .products__souces {
     background-color: #ffffff;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .souces-logo {

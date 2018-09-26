@@ -3,16 +3,17 @@
     height: auto;
     background-color: white;
     color: rgb(0, 0, 0);
-    z-index: 100;
+    z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
+}
 
-    /*background-color: #353535;
-    background-image: url("/assets/images/background.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: 35%;*/
+.anchor_about a {
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 35px;
+    z-index: 2;
+    color: black;
 }
 
 .about-block {
@@ -25,5 +26,5 @@
 }
 
 .about_image img {
-    border: 1px solid gray; 
+    border: 2px dashed #BC987E; 
 }
