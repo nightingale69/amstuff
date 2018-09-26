@@ -1,8 +1,8 @@
 .content__about {
     position: relative;
     height: auto;
-    background-color: white;
-    color: rgb(0, 0, 0);
+    background-color: black;
+    color: white;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -13,7 +13,6 @@
     font-size: 50px;
     margin-bottom: 35px;
     z-index: 2;
-    color: black;
 }
 
 .about-block {
@@ -26,5 +25,5 @@
 }
 
 .about_image img {
-    border: 2px dashed #BC987E; 
+    border: 2px dashed white; 
 }

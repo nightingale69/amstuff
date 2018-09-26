@@ -117,13 +117,6 @@
     background-size: 40px 40px;
 }
 
-.logo_container {
-    border: 3px solid white;
-    border-radius: 50px;
-    width: 650px;
-    margin: 0 auto;
-}
-
 /*.description_site__logo img,
 .description_site__logo h2 {
     display: inline-block;
@@ -143,7 +136,7 @@
     position: fixed;
     text-align: left;
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 18px 0 18px 0;
     background-color: #000000;
     font-family: 'LeArchitect', 'arial', sans-serif;
     font-size: 50px;
@@ -176,10 +169,13 @@
 }
 
 .content__description p {
-    color: #f0efd1;
+    color: #ffffff;
     font-size: 50px;
     letter-spacing: 3px;
-    padding-top: 100px;
+}
+
+.description_text {
+    padding-top: 400px;
 }
 
 .content__description a {
