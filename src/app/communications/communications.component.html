@@ -1,6 +1,7 @@
 <div class="content__communications">
     <div class="communications__number">
         <p><a name="communications"></a></p>
+        <!--https://habr.com/post/346242/-->
         <p>
             Телефон: 8-905-547-34-87 
         </p>
@@ -10,4 +11,21 @@
           	</a>
         </p>
     </div>
+    <form [formGroup]="myFirstReactiveForm" (submit)="onSubmit()">
+        <label for="name">имя</label>
+        <input type="text" id="name" formControlName="name" />
+        <div class="error" *ngIf="isControlInvalid('name')">
+            Имя должно состоять только из русских букв
+        </div>
+        <br/><br/>
+      
+        <label for="phone">email</label>
+        <input type="text" id="phone" formControlName="phone" />
+        <br/><br/>
+      
+        <button type="submit">ОТПРАВИТЬ</button>
+      </form>
+      <div>
+        {{myFirstReactiveForm.value | json}}
+       </div>
 </div>
