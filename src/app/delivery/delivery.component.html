@@ -1,12 +1,12 @@
 <div class="content__delivery-payment delivery-payment">
-  	<p class="anchor_delivery-payment">
+  	<h1 class="anchor_delivery-payment">
 		<a name="pay">Как мне получить желаемое?</a>
-	</p>
+	</h1>
 	<div class="delivery-payment--container">
 	  	<div class="delivery-payment-delivery">
-	  	  	<p class="title-delivery" style="font-size: 30px">
+	  	  	<h2 class="title-delivery" style="font-size: 30px">
 	  	  	  	Доставка
-	  	  	</p>
+			</h2>
 	  	  	<div class="select-delivery" *ngFor="let item of deliveries">
 	  	  	  	<p style="font-weight: bold;">{{ item.place }}</p>
 	  	  	  	<p>{{ item.where1 }}</p>
@@ -21,9 +21,9 @@
 	  	  	</div>
 	  	</div>
 	  	<div class="delivery-payment-payment">
-	  	  	<p class="title-payment" style="font-size: 30px">
+	  	  	<h2 class="title-payment" style="font-size: 30px">
 	  	  	  	Оплата
-	  	  	</p>
+			</h2>
 	  	  	<div class="select-payment" *ngFor="let item of payment">
 	  	  	  	<p style="font-weight: bold">{{ item.how }}</p>
 	  	  	  	<p>{{ item.comment }}</p>

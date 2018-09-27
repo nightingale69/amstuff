@@ -1,31 +1,41 @@
 <div class="content__communications">
+    <!--https://stackblitz.com/angular/xkaydxbpbao?file=src%2Fapp%2Freactive%2Fhero-form-reactive.component.html-->
     <div class="communications__number">
-        <p><a name="communications"></a></p>
-        <!--https://habr.com/post/346242/-->
+        <p class="anchor_communications"><a name="communications"></a></p>
         <p>
             Телефон: 8-905-547-34-87 
         </p>
-        <p>
-            <a href="mailto:draghignazzo.sss@gmail.com?Subject=Хочу сумку!!!&body=Хочу красную" target="_blank">
-              	E-mail : nikolaev_69rus@mail.ru
-          	</a>
-        </p>
     </div>
-    <form [formGroup]="myFirstReactiveForm" (submit)="onSubmit()">
-        <label for="name">имя</label>
-        <input type="text" id="name" formControlName="name" />
-        <div class="error" *ngIf="isControlInvalid('name')">
-            Имя должно состоять только из русских букв
+    <form [formGroup]="orderForm" #formDir="ngForm">
+        <div class="cross-validation" [class.cross-validation-error]="orderForm.errors?.identityRevealed && (orderForm.touched || orderForm.dirty)">
+            <div class="form-group">
+                <label for="name">Имя*</label>
+                <input id="name" class="form-control" formControlName="name" required >
+                <!--<div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                    <div *ngIf="name.errors.required">
+                        Имя обязательно для заполнения
+                    </div>
+                    <div *ngIf="name.errors.minlength">
+                        Имя должно быть не короче 2 символов
+                    </div>
+                </div>-->
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон*</label>
+                <input id="phone" class="form-control" formControlName="phone" required>
+                <!--<div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="alert alert-danger">
+                    <div *ngIf="phone.errors.required">
+                        Телефон обязателен для заполнения
+                    </div>
+                    <div *ngIf="phone.errors.minlength">
+                        Телефон должен быть не короче 5 символов
+                    </div>
+                </div>-->
+            </div>
         </div>
-        <br/><br/>
-      
-        <label for="phone">email</label>
-        <input type="text" id="phone" formControlName="phone" />
-        <br/><br/>
-      
-        <button type="submit">ОТПРАВИТЬ</button>
-      </form>
-      <div>
-        {{myFirstReactiveForm.value | json}}
-       </div>
+        <!--<button type="submit" class="btn btn-default" [disabled]="orderForm.invalid">Submit</button>-->
+    </form>
+    <a href="mailto:draghignazzo.sss@gmail.com?Subject=Хочу сумку!!!&body=Имя: {{ orderForm.value.name }},%0D%0AТелефон: {{ orderForm.value.phone }}" target="_blank">
+        <button type="submit" class="btn btn-success" [class.btn-disabled]="orderForm.invalid" [disabled]="orderForm.invalid">Готово</button>
+    </a>
 </div>

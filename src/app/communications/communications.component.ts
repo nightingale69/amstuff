@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   	selector: 'app-communications',
@@ -8,50 +8,23 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 
 export class CommunicationsComponent implements OnInit {
-	myFirstReactiveForm: FormGroup;
-  
-	constructor(private fb: FormBuilder){}
- 	ngOnInit(){
-		this.initForm();
+	orderForm: FormGroup;
+	
+	ngOnInit(): void {
+		this.orderForm = new FormGroup({
+		  	'name': new FormControl('', [
+				Validators.required,
+				Validators.minLength(2),
+				Validators.pattern("^[А-я ]*$")
+		  	]),
+		  	'phone': new FormControl('', [
+				Validators.required,
+				Validators.minLength(5),
+				Validators.pattern("^[0-9+]*$")
+		  	])
+		}); 
 	}
-
-	/** Инициализация формы*/
-	initForm(){
-		this.myFirstReactiveForm = this.fb.group({
-			name: ['', [
-			  	Validators.required,
-			  	Validators.pattern(/[А-я]/)
-				]
-			],
-			phone: ['8', [
-			  	Validators.required, Validators.email
-				]
-			]
-		});
-	}
-
-	isControlInvalid(controlName: string): boolean {
-		const control = this.myFirstReactiveForm.controls[controlName];
-		
-		const result = control.invalid && control.touched;
-		
-		return result;
-	}
-
-	onSubmit() {
-		const controls = this.myFirstReactiveForm.controls;
-		
-		 /** Проверяем форму на валидность */ 
-		if (this.myFirstReactiveForm.invalid) {
-			/** Если форма не валидна, то помечаем все контролы как touched*/
-			Object.keys(controls)
-		   	.forEach(controlName => controls[controlName].markAsTouched());
-		   
-		   /** Прерываем выполнение метода*/
-		   return;
-		}
-		
-		/** TODO: Обработка данных формы */
-		console.log(this.myFirstReactiveForm.value);
-	}
+	
+	get name() { return this.orderForm.get('name'); }
+	get phone() { return this.orderForm.get('phone'); }
 }

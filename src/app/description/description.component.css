@@ -175,6 +175,7 @@
 }
 
 .description_text {
+    position: fixed;
     padding-top: 400px;
 }
 

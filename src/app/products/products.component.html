@@ -1,7 +1,7 @@
 <div class="content__products products">
-	<p class="anchor_products">
-		  <a name="products">Изделия</a>
-	</p>
+	<h1 class="anchor anchor_products">
+		<a name="products">Изделия</a>
+	</h1>
   	<div class="products__bag" *ngFor="let bag of products_bags">
   	  	<div class="product_bag--block bag-gallery">
   	  	  	<div class="image_bag">
@@ -18,14 +18,14 @@
   	  	  	<p>
   	  	  	  	{{ bag.description }}
   	  	  	</p>
-  	  	  	<p style="font-weight: bold">
+  	  	  	<strong>
   	  	  	  	{{ bag.price }}
-  	  	  	</p>
+			</strong>
   	  	</div>
   	</div>
 
   	<div class="products__souces">
-		<p><a name="souces"></a></p>
+		<a name="souces"></a>
   	  	<div class="souces-logo">
   	  	    <img src="assets/images/souces/waldenfarms-logo.jpg" width="500px" alt="walden farms">
   	  	    <p class="souces-description">
@@ -40,9 +40,9 @@
   	  	  	  	<p class="description_souce-text">
   	  	  	  	  	{{ souce.description }}
   	  	  	  	</p>
-  	  	  	  	<p style="font-weight: bold">
+  	  	  	  	<strong>
   	  	  	  	  	{{ souce.price }}
-  	  	  	  	</p>
+  	  	  	  	</strong>
   	  	  	</div>
   	  	</div>
   	</div>

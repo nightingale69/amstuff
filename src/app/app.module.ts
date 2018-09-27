@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
@@ -10,19 +10,19 @@ import { AboutComponent } from './about/about.component';
 import { CommunicationsComponent } from './communications/communications.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ProductsComponent,
-    DescriptionComponent,
-    DeliveryComponent,
-    AboutComponent,
-    CommunicationsComponent
-  ],
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  	declarations: [
+  	  	AppComponent,
+  	  	ProductsComponent,
+  	  	DescriptionComponent,
+  	  	DeliveryComponent,
+  	  	AboutComponent,
+  	  	CommunicationsComponent
+  	],
+  	imports: [
+    	BrowserModule,
+    	ReactiveFormsModule
+  	],
+  	providers: [],
+  	bootstrap: [AppComponent]
 })
 export class AppModule { }
