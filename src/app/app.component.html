@@ -8,20 +8,20 @@
 			</div>
 		</a>
 		<ul class="navbar">
-			<li><a href="#products">ИЗДЕЛИЯ</a></li>
-			<li><a href="#souces">СОУСЫ</a></li>
-			<li><a href="#pay">ОПЛАТА</a></li>
-			<li><a href="#communications">СВЯЗЬ</a></li>
-			<li><a href="#about">О НАС</a></li>
+			<li><a href="#" [ngx-scroll-to]="'products'" [ngx-scroll-to-offset]="400">ИЗДЕЛИЯ</a></li>
+			<li><a href="#" [ngx-scroll-to]="'souces'">СОУСЫ</a></li>
+			<li><a href="#" [ngx-scroll-to]="'pay'">ОПЛАТА</a></li>
+			<li><a href="#" [ngx-scroll-to]="'contacts'">СВЯЗЬ</a></li>
+			<li><a href="#" [ngx-scroll-to]="'about'">О НАС</a></li>
 		</ul> 
 	</div>	 
 </header>
 <main class="main">
 	<app-description></app-description>
-	<app-products></app-products>
-	<app-delivery></app-delivery>
-	<app-communications></app-communications>
-	<app-about></app-about>
+	<app-products name="products" id="products"></app-products>
+	<app-delivery name="pay" id="pay"></app-delivery>
+	<app-communications name="contacts" id="contacts"></app-communications>
+	<app-about name="about" id="about"></app-about>
 </main>
 <footer class="footer">
 	

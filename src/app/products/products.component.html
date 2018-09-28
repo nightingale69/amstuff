@@ -1,7 +1,4 @@
 <div class="content__products products">
-	<h1 class="anchor anchor_products">
-		<a name="products">Изделия</a>
-	</h1>
   	<div class="products__bag" *ngFor="let bag of products_bags">
   	  	<div class="product_bag--block bag-gallery">
   	  	  	<div class="image_bag">
@@ -21,13 +18,12 @@
   	  	  	<strong>
   	  	  	  	{{ bag.price }}
 			</strong>
-  	  	</div>
+		</div>	
   	</div>
 
   	<div class="products__souces">
-		<a name="souces"></a>
   	  	<div class="souces-logo">
-  	  	    <img src="assets/images/souces/waldenfarms-logo.jpg" width="500px" alt="walden farms">
+			<img src="assets/images/souces/waldenfarms-logo.jpg" width="500px" alt="walden farms">
   	  	    <p class="souces-description">
   	  	      	С самого начала миссия Walden Farms как фермерского хозяйства заключалась в том, 
   	  	      	чтобы развивать здоровую пищу, помочь людям контролировать свои калории, жиры, углеводы, глютен или сахар любого рода ... 
@@ -44,6 +40,6 @@
   	  	  	  	  	{{ souce.price }}
   	  	  	  	</strong>
   	  	  	</div>
-  	  	</div>
-  	</div>
+		</div>
+	</div>
 </div>

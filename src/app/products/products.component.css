@@ -1,5 +1,6 @@
 .content__products {
     position: relative;
+    height: auto;
     background-color: #ffffff;
     padding: 20px 0 0 0;
     z-index: 10;

@@ -7,13 +7,6 @@
     padding-bottom: 20px;
 }
 
-.anchor_delivery-payment {
-    position: relative;
-    font-size: 50px;
-    margin-bottom: 25px;
-    z-index: 2;
-}
-
 .delivery-payment--container {
     width: 100%;
     display: inline-block;

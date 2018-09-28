@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
@@ -20,7 +21,8 @@ import { CommunicationsComponent } from './communications/communications.compone
   	],
   	imports: [
     	BrowserModule,
-    	ReactiveFormsModule
+		ReactiveFormsModule,
+		ScrollToModule.forRoot()
   	],
   	providers: [],
   	bootstrap: [AppComponent]

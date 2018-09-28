@@ -94,7 +94,7 @@
 }
  
 .fullscreen-bg__video {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
@@ -133,7 +133,7 @@
 }*/
 
 .description_site__logo h2 {
-    position: fixed;
+    position: absolute;
     text-align: left;
     width: 100%;
     padding: 18px 0 18px 0;
@@ -175,7 +175,7 @@
 }
 
 .description_text {
-    position: fixed;
+    position: absolute;
     padding-top: 400px;
 }
 
