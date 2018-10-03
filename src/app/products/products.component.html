@@ -1,16 +1,25 @@
 <div class="content__products products">
+	<h1 style="font-size: 50px; margin-bottom: 30px">НАШИ ИЗДЕЛИЯ</h1>
   	<div class="products__bag" *ngFor="let bag of products_bags">
-  	  	<div class="product_bag--block bag-gallery">
-  	  	  	<div class="image_bag">
-  	  	  	  	<img src="{{bag.image1}}" alt="bag">
-  	  	  	</div>
-  	  	  	<div class="image_bag-mini">
-  	  	  	  	<img src="{{bag.image2}}" alt="bag mini">
-  	  	  	</div>
-  	  	  	<div class="image_bag-mini">
-  	  	  	  	<img src="{{bag.image3}}" alt="bag mini">
-  	  	  	</div>
-  	  	</div>
+		<div class="product_bag--block bag-gallery">
+			<ui-carousel [infinite]="false" [fade]="true" [autoPlay]='false' [speed]="200" width="400px" >
+				<ui-carousel-item>
+  	  	  			<div class="image_bag">
+  	  	  			  	<img src="{{bag.image1}}" alt="bag">
+				    </div>
+				</ui-carousel-item>
+				<ui-carousel-item>
+  	  	  			<div class="image_bag">
+  	  	  			  	<img src="{{bag.image2}}" alt="bag mini">
+					</div>
+				</ui-carousel-item>
+				<ui-carousel-item>
+  	  	  			<div class="image_bag">
+  	  	  			  	<img src="{{bag.image3}}" alt="bag mini">
+					</div>
+				</ui-carousel-item>
+			</ui-carousel>
+		</div>
   	  	<div class="product_bag--block description_bag">
   	  	  	<p>
   	  	  	  	{{ bag.description }}
@@ -18,28 +27,6 @@
   	  	  	<strong>
   	  	  	  	{{ bag.price }}
 			</strong>
-		</div>	
-  	</div>
-
-  	<div class="products__souces">
-  	  	<div class="souces-logo">
-			<img src="assets/images/souces/waldenfarms-logo.jpg" width="500px" alt="walden farms">
-  	  	    <p class="souces-description">
-  	  	      	С самого начала миссия Walden Farms как фермерского хозяйства заключалась в том, 
-  	  	      	чтобы развивать здоровую пищу, помочь людям контролировать свои калории, жиры, углеводы, глютен или сахар любого рода ... 
-  	  	      	не отказываясь от большинства вкусов!
-  	  	    </p>
-  	  	</div>
-  	  	<div *ngFor="let souce of products_souces" class="product_souce--block image_souce">
-  	  	  	<img src="{{souce.image}}" alt="souce">
-  	  	  	<div class="product_other--block description_souce">
-  	  	  	  	<p class="description_souce-text">
-  	  	  	  	  	{{ souce.description }}
-  	  	  	  	</p>
-  	  	  	  	<strong>
-  	  	  	  	  	{{ souce.price }}
-  	  	  	  	</strong>
-  	  	  	</div>
 		</div>
 	</div>
 </div>

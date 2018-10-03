@@ -1,90 +1,3 @@
-/*.content__description {
-    width: 100%;
-    height: 100vh;
-    border-spacing:50px;
-
-    background-image: url("/assets/images/description1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-}
-
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.description_site__logo {
-    display: inline-block;
-    width: 400px;
-    margin-top: 35px;
-}
-
-.description_site__logo h {
-    text-align:center;
-    color:#fff;
-    font-size: 70px;
-    margin-top:17%;
-}
-
-.eyes {
-    position: relative;
-    top: 173px;
-    left: 67px;
-}
-
-.left_eye {
-    width: 10px;
-    height: 10px;
-    margin-left: 63px;
-    transform: rotate(20deg);
-    border-radius: 50%;
-    animation-name: eyes;
-    animation-duration: 2s;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 5px #bf3211;
-    float: left;
-}
-.right_eye {
-    width: 10px;
-    height: 10px;
-    margin-left: 120px;
-    transform: rotate(-28deg);
-    border-radius: 50%;
-    animation-name: eyes;
-    animation-duration: 2s;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 5px #bf3211;
-    float: left;
-}
-
-.content__description h2 {
-    font-family: 'LeArchitect', 'arial', sans-serif;
-    font-size: 70px;
-    letter-spacing: 3px;
-    color: white;
-    text-decoration: underline;
-    margin-bottom: 30px;
-}
-
-.content__description p {
-    color: #f0efd1;
-    font-size: 50px;
-    letter-spacing: 3px;
-}
-
-.content__description a {
-    color: #bf3211;
-    text-decoration: none;
-}
-
-.to_products--arrow {
-    text-shadow: 0px 0px 10px #bf3211;  
-}*/
-
 .content__description {
     overflow: hidden;
     z-index: 1;
@@ -93,6 +6,10 @@
     height: 100vh;
 }
  
+.logo_stuff_mob {
+    display: none;
+}
+
 .fullscreen-bg__video {
     position: absolute;
     top: 0;
@@ -117,21 +34,6 @@
     background-size: 40px 40px;
 }
 
-/*.description_site__logo img,
-.description_site__logo h2 {
-    display: inline-block;
-    vertical-align: middle;
-}*/
-
-/*.description_site__logo h2 {
-    text-align: center;
-    font-family: 'LeArchitect', 'arial', sans-serif;
-    font-size: 80px;
-    letter-spacing: 3px;
-    color: white;
-    text-decoration: underline;
-}*/
-
 .description_site__logo h2 {
     position: absolute;
     text-align: left;
@@ -153,6 +55,7 @@
     height: 4px;
     transition: box-shadow 0.2s 0s ease;
     border-radius: 50px;
+    z-index: 3;
 }
 
 .instagram:hover .flash {
@@ -175,8 +78,14 @@
 }
 
 .description_text {
-    position: absolute;
-    padding-top: 400px;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+.description_text p {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .content__description a {
@@ -186,4 +95,32 @@
 
 .to_products--arrow {
     text-shadow: 0px 0px 10px #bf3211;  
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 830px) {
+    .fullscreen-bg__video {
+        display: none;
+    }
+
+    .phone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .description_text p { 
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo_stuff_mob {
+        display: block;
+    }
+
+    .description_site__logo h2 {
+        padding-left: 100px;
+    }
 }

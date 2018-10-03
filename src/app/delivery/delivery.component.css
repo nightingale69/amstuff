@@ -3,8 +3,8 @@
     height: auto;
     background-color: #282944;
     color: white;
+    padding: 20px 0 20px 0;
     z-index: 10;
-    padding-bottom: 20px;
 }
 
 .delivery-payment--container {
@@ -29,9 +29,26 @@
 .title-payment {
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 30px
 }
 
 .select-delivery,
 .select-payment {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .delivery-payment--container h2 { 
+        font-size: 50px;
+    }
+
+    .delivery-payment--container p { 
+        font-size: 30px;
+    }
+
+    .delivery-payment-delivery,
+    .delivery-payment-payment {
+        width: 90%;
+    }
 }
