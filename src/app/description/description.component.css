@@ -76,12 +76,20 @@
 }
 
 .phone {
-    position: absolute; 
-    margin-top: 17px; 
+    position: absolute;
+    margin-top: 30px; 
     right: 150px; 
     height: 30px; 
-    font-size: 30px; 
     z-index: 3;
+}
+
+.phone-mob {
+    position: absolute;
+    display: none;
+    margin-top: 75px; 
+    left: 127px; 
+    height: 30px; 
+    z-index: 3; 
 }
 
 .content__description p {
@@ -119,6 +127,10 @@
 
     .phone {
         display: none
+    }
+
+    .phone-mob {
+        display: block; 
     }
 }
 

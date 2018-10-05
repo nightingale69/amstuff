@@ -6,16 +6,6 @@
     z-index: 10;
 }
 
-.content__products:before {
-    content: "";
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-    height: 1px;
-    width: 80%;
-    border-top: 1px solid black;
-}
-
 .products-description {
     font-size: 30px;
     padding: 0 0 20px 0;
