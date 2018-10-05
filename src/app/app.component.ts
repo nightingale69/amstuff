@@ -9,5 +9,14 @@ export class AppComponent {
 
   	scroll(el) {
     	el.scrollIntoView();
-  	}
+	}
+	  
+	visibility: boolean = true;
+	invisibility: boolean = false;
+
+    transfer(){
+		this.visibility=!this.visibility;
+		this.invisibility=!this.invisibility;
+	}
+
 }

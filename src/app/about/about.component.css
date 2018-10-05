@@ -29,7 +29,7 @@
     border: 2px dashed white; 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
     .about-block { 
         width: 90%;
     }

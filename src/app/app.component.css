@@ -1,3 +1,7 @@
+.header-mob {
+    display: none;
+}
+
 .logo_a .left_eye {
     width: 8px;
     height: 4px;
@@ -41,6 +45,16 @@
     transition: background-color 1s 0s ease, color 1s 0s ease;
 }
 
+.navbar-mob p {
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+}
+
 .navbar p:hover {
     background-color: #ffffff;
     color: black;
@@ -78,11 +92,30 @@
     text-decoration: underline;
 }
 
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
     .header {
         display: none;
     }
+
+    .header-mob {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        color: wheat;
+        top: 150px;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .invisible {
+        display: none;
+    }
+    .visible {
+        display: none;
+    }
+
 
     .main {
         background-size: 65%;
@@ -91,5 +124,9 @@
     .main,
     .footer {
         padding-left: 0px;
+    }
+
+    .footer {
+        font-size: 35px;
     }
 }

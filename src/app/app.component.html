@@ -17,6 +17,17 @@
 		</ul> 
 	</div>	 
 </header>
+<div class="logo_href-mob" style="position:absolute; top:10px; left:10px; width:120px; height:120px; z-index: 10;" (click)="transfer()"></div>
+<div class="header-mob" [class.invisible]="visibility">
+	<ul class="navbar-mob">
+		<li><p [ngx-scroll-to]="'products'">ИЗДЕЛИЯ</p></li>
+		<li><p [ngx-scroll-to]="'souces'">СОУСЫ</p></li>
+		<li><p [ngx-scroll-to]="'pay'">ОПЛАТА</p></li>
+		<li><p [ngx-scroll-to]="'about'">О НАС</p></li>
+		<li><p [ngx-scroll-to]="'reviews'">ОТЗЫВЫ</p></li>
+		<li><p [ngx-scroll-to]="'contacts'">СВЯЗЬ</p></li>
+	</ul> 
+</div>
 <main class="main">
 	<app-description id="home"></app-description>
 	<app-products id="products"></app-products>
