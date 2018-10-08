@@ -59,6 +59,20 @@
     height: 45px;
 }
 
+.product_other--block .ingredients {
+    position: absolute;
+    display: none;
+    width: 200px;
+    top: -205px;
+    font-size: 10px;
+    text-align: left;
+    z-index: 10;
+}
+
+.product_souce--block:hover .ingredients {
+    display: block;
+}
+
 @media screen and (max-width: 800px) {
     .souces-logo img {
         width: 400px;

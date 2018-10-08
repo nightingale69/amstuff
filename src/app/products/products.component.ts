@@ -13,42 +13,42 @@ export class ProductsComponent {
   	    image1: "assets/images/bags/product12_1.jpg",
   	    image2: "assets/images/bags/product12_2.jpg",
   	    image3: "assets/images/bags/product12_3.jpg",
-  	    description: 'Для 5 поварских инструментов или ножей', 
+  	    description: 'Для 5 поварских ножей / инструментов', 
   	    price: '6000 ₽'
   	  },
   	  {
   	    image1: "assets/images/bags/product4_1.jpg",
   	    image2: "assets/images/bags/product4_2.jpg",
   	    image3: "assets/images/bags/product4_3.jpg",
-  	    description: 'Для 6 поварских инструментов или ножей', 
+  	    description: 'Для 6 поварских ножей / инструментов', 
   	    price: '6500 ₽'
   	  },
   	  {
   	    image1: "assets/images/bags/product11_1.jpg",
   	    image2: "assets/images/bags/product11_2.jpg",
   	    image3: "assets/images/bags/product11_3.jpg",
-  	    description: 'Для 7 поварских инструментов или ножей', 
+  	    description: 'Для 7 поварских ножей / инструментов', 
   	    price: '5000 ₽'
   	  },
   	  {
   	    image1: "assets/images/bags/product9_1.jpg",
   	    image2: "assets/images/bags/product9_2.jpg",
   	    image3: "assets/images/bags/product9_3.jpg",
-  	    description: 'Для 10 поварских инструментов или ножей', 
+  	    description: 'Для 10 поварских ножей / инструментов', 
   	    price: '6900 ₽'
   	  },
   	  {
   	    image1:  "assets/images/bags/product1_1.jpg",
   	    image2:  "assets/images/bags/product1_2.jpg",
   	    image3:  "assets/images/bags/product1_3.jpg",
-  	    description: 'Для 13 поварских инструментов или ножей', 
+  	    description: 'Для 13 поварских ножей / инструментов', 
   	    price: '8900 ₽'
   	  },
   	  {
   	    image1: "assets/images/bags/product10_1.jpg",
   	    image2: "assets/images/bags/product10_2.jpg",
   	    image3: "assets/images/bags/product10_3.jpg",
-  	    description: 'Для 18 поварских инструментов или ножей', 
+  	    description: 'Для 18 поварских ножей / инструментов', 
   	    price: '15000 ₽'
   	  },
   	  {
