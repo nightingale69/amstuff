@@ -1,4 +1,4 @@
-.content__delivery-payment {
+.content__getting {
     position: relative;
     height: auto;
     background-color: #282944;
@@ -7,7 +7,7 @@
     z-index: 10;
 }
 
-.content__delivery-payment:before {
+.content__getting:before {
     content: "";
     position: absolute;
     left: 10%;
@@ -17,15 +17,15 @@
     border-top: 1px solid white;
 }
 
-.delivery-payment--container {
+.getting-payment--container {
     width: 100%;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
 }
 
-.delivery-payment-delivery,
-.delivery-payment-payment {
+.getting-delivery,
+.getting-payment {
     position: relative;
     width: 400px;
     display: inline-block;
@@ -35,7 +35,7 @@
     z-index: 2;
 }
 
-.delivery-payment-payment {
+.getting-payment {
     width: 300px;
 }
 
@@ -53,16 +53,16 @@
 
 @media screen and (max-width: 800px) {
 
-    .delivery-payment--container h2 { 
+    .getting--container h2 { 
         font-size: 50px;
     }
 
-    .delivery-payment--container p { 
+    .getting--container p { 
         font-size: 30px;
     }
 
-    .delivery-payment-delivery,
-    .delivery-payment-payment {
+    .getting-delivery,
+    .getting-payment {
         width: 90%;
     }
 }
