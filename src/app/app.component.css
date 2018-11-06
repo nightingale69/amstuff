@@ -2,7 +2,7 @@
     display: none;
 }
 
-.logo_a .left_eye {
+/*.logo_a .left_eye {
     width: 8px;
     height: 4px;
     margin-left: 21px;
@@ -43,7 +43,7 @@
     height: 80px;
     line-height: 80px;
     transition: background-color 1s 0s ease, color 1s 0s ease;
-}
+}*/
 
 .navbar-mob p {
     text-decoration: none;
@@ -55,11 +55,11 @@
     font-size: 30px;
 }
 
-.navbar p:hover {
+/*.navbar p:hover {
     background-color: #ffffff;
     color: #212121;
     cursor: pointer;
-}
+}*/
 
 .main {
     background-color: #353535;
@@ -68,9 +68,8 @@
     background-attachment: fixed;
     background-position: center center;
     background-size: 35%;
-    text-align: center;
     z-index: 1;
-    padding-left: 80px;
+    /*padding-left: 80px;*/
 }
 
 .footer {
