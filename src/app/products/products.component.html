@@ -1,11 +1,11 @@
 <div class="content__products products">
-	<h1 style="text-align: left; font-size: 40px; padding-left: 40px">ИЗДЕЛИЯ</h1>
+	<h1 style="text-align: left; font-size: 40px;">ИЗДЕЛИЯ</h1>
 	<p class="products-description">
 		натуральная кожа, ручная работа
 	</p>
   	<div class="products__bag" *ngFor="let bag of products_bags">
 		<div class="product_bag--block bag-gallery">
-			<ui-carousel #uiCarousel [infinite]="false" [fade]="false" [autoPlay]='false' [speed]="200" [arrows]="false" class="carousel-pc">
+			<ui-carousel #uiCarousel [infinite]="false" [fade]="false" [dots]='false' [autoPlay]='false' [speed]="200" [arrows]="false" height="375px" class="carousel-pc">
 				<ui-carousel-item>
   	  	  			<div class="image_bag">
   	  	  			  	<img src="{{bag.image1}}" alt="bag1">
@@ -54,10 +54,10 @@
 			</ui-carousel>
 		</div>
   	  	<div class="product_bag--block description_bag">
-  	  	  	<p>
+  	  	  	<p style="margin: 120px 10px 10px 10px">
   	  	  	  	{{ bag.description }}
   	  	  	</p>
-  	  	  	<strong class="price_bag">
+  	  	  	<strong style="margin: 10px" class="price_bag">
   	  	  	  	{{ bag.price }}
 			</strong>
 		</div>
