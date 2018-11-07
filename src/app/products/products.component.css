@@ -1,14 +1,15 @@
 .content__products {
     position: relative;
     height: auto;
-    background-color: #f3f3f3;
-    padding: 20px 0 20px 0;
-    z-index: 10;
+    padding: 0 40px 20px 40px;
+    text-align: center;
+    z-index: 0;
 }
 
 .products-description {
     font-size: 30px;
-    padding: 0 0 20px 0;
+    text-align: left;
+    padding: 0 0 20px 40px;
 }
 
 .products__bag {

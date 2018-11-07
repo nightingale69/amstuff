@@ -62,11 +62,7 @@
 }*/
 
 .main {
-    background-color: #353535;
-    background-image: url("/assets/images/background.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
+    background-color: rgb(224, 224, 224);
     background-size: 35%;
     z-index: 1;
     /*padding-left: 80px;*/

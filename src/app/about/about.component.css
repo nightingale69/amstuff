@@ -1,6 +1,7 @@
 .content__about {
     position: relative;
     background-color: black;
+    text-align: center;
     color: white;
     padding: 20px 0 50px 0;
     z-index: 10;
@@ -16,7 +17,9 @@
     border-top: 1px solid white;
 }
 
+.image-container,
 .about-block {
+    position: relative;
     display: inline-block;
     width: 600px;
     font-size: 30px;
@@ -25,8 +28,23 @@
     font-family: 'Caveat-Regular', 'arial', sans-serif;
 }
 
-.about_image img {
-    border: 2px dashed white; 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    text-align: center;
+    z-index: 0;
+}
+
+.ssss {
+    opacity: 1;
+    transition: opacity 1s 0s ease;
+    position: relative;
+    z-index: 10;
+}
+
+.image-container:hover .ssss {
+    opacity: 0;
 }
 
 @media screen and (max-width: 800px) {
