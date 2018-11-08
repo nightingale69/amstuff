@@ -13,20 +13,20 @@
 
 .products__bag {
     position: relative;
-    width: 500px;
+    width: 450px;
     display: inline-block;
-    margin: 10px 10px 10px 0;
+    margin: 0 10px 10px 0;
     background-color: #ffffff;
 }
 
 .product_bag--block {
-    width: 500px;
+    width: 450px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .image_bag img {
-    width: 500px;
+    width: 450px;
 }
 
 .carousel-mob {
@@ -39,7 +39,7 @@ ui-carousel::ng-deep .ui-carousel-item {
 
 .description_bag {
     position: absolute;
-    width: 500px;
+    width: 450px;
     height: 100%;
     top: 0;
     left: 0;
