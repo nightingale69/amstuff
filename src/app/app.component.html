@@ -10,12 +10,15 @@
 </div>-->
 <main class="main">
 	<app-description id="home" scroller></app-description>
+	<div class="stumbMenu"></div>
 	<ul class="fixedMenu">
 		<li><p [ngx-scroll-to]="'products'">ИЗДЕЛИЯ</p></li>
 		<li><p [ngx-scroll-to]="'souces'">СОУСЫ</p></li>
 		<li><p [ngx-scroll-to]="'pay'">КУПИТЬ</p></li>
 		<li><p [ngx-scroll-to]="'contacts'">СВЯЗЬ</p></li>
 		<li><p [ngx-scroll-to]="'about'">О НАС</p></li>
+		<li><p><a href="https://vk.com/nikolaev_cuisine" target="_blank" title="Наша группа">ВКОНТАКТЕ</a></p></li>
+		<li><p><a href="https://www.instagram.com/knife.roll/" target="_blank" title="Наш инстаграм">ИНСТАГРАММ</a></p></li>
 	</ul>
 	<app-products id="products"></app-products>
 	<app-souces id="souces"></app-souces>

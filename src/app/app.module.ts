@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { UICarouselModule } from "ui-carousel";
-import { ScrollEventModule } from 'ngx-scroll-event';
+//import { ScrollEventModule } from 'ngx-scroll-event';
 
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
@@ -30,7 +30,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 		ReactiveFormsModule,
 		ScrollToModule.forRoot(),
 		UICarouselModule,
-		ScrollEventModule
+		//ScrollEventModule
   	],
   	providers: [],
   	bootstrap: [AppComponent]
